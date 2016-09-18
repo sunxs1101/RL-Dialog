@@ -9,6 +9,10 @@ karpathy给出了js版[reinforcement learning](http://cs.stanford.edu/people/kar
 ### Policy Gradients
  - a stochastic policy gradient Agent利用REINFORCE和LSTMs学习actor policy和value function baseline。
  - [Deterministic Policy Gradients](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Publications_files/deterministic-policy-gradients.pdf)
+ - 
+ 
+## 测试
+参考[基于tensorflow的DQN](https://github.com/devsisters/DQN-tensorflow)，在
 
 ## 参考
  - Playing Atari with Deep Reinforcement Learning 
