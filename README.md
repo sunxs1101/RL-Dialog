@@ -11,6 +11,5 @@ karpathy给出了js版[reinforcement learning](http://cs.stanford.edu/people/kar
  - [Deterministic Policy Gradients](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Publications_files/deterministic-policy-gradients.pdf)
 
 ## 参考
- [1] Playing Atari with Deep Reinforcement Learning 
-
-Human-level control through deep reinforcement learning
+ - Playing Atari with Deep Reinforcement Learning 
+ - [Human-level control through deep reinforcement learning](http://home.uchicago.edu/%7Earij/journalclub/papers/2015_Mnih_et_al.pdf)
