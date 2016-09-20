@@ -6,6 +6,8 @@ karpathy给出了js版[reinforcement learning](http://cs.stanford.edu/people/kar
 ### deep reinforcement learning
 [Mnih etal.](Playing Atari with Deep Reinforcement Learning)的Atari Game Playing游戏很好的描述Deep Reinforcement Learning的作用，用卷积神经网络对action-value函数Q(s,a)建模，
 
+在Oxford的[lecture12](http://www.cs.ox.ac.uk/people/nando.defreitas/machinelearning/lecture12.pdf)和UCL的[lecture6](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching_files/FA.pdf)都讲到了DQN，
+
 ### Policy Gradients
  - a stochastic policy gradient Agent利用REINFORCE和LSTMs学习actor policy和value function baseline。
  - [Deterministic Policy Gradients](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Publications_files/deterministic-policy-gradients.pdf)
