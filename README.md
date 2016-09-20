@@ -17,3 +17,9 @@ karpathy给出了js版[reinforcement learning](http://cs.stanford.edu/people/kar
 ## 参考
  - Playing Atari with Deep Reinforcement Learning 
  - [Human-level control through deep reinforcement learning](http://home.uchicago.edu/%7Earij/journalclub/papers/2015_Mnih_et_al.pdf)
+
+## 强化学习学习资料
+
+ 1. [Oxford reinforcement learning lecture](http://www.cs.ox.ac.uk/people/nando.defreitas/machinelearning/)
+ 2. [David Silver's RL class](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html)
+ 3. 
