@@ -17,8 +17,7 @@ karpathy给出了js版[reinforcement learning](http://cs.stanford.edu/people/kar
 参考[基于tensorflow的DQN](https://github.com/devsisters/DQN-tensorflow)，在
 
 ## 参考
- - Playing Atari with Deep Reinforcement Learning 
- - [Human-level control through deep reinforcement learning](http://home.uchicago.edu/%7Earij/journalclub/papers/2015_Mnih_et_al.pdf)
+ - Playing Atari with Deep Reinforcement Learning论文[Human-level control through deep reinforcement learning](http://home.uchicago.edu/%7Earij/journalclub/papers/2015_Mnih_et_al.pdf)
 
 ## 强化学习学习资料
 
