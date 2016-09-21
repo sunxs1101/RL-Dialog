@@ -8,11 +8,19 @@ karpathy给出了js版[reinforcement learning](http://cs.stanford.edu/people/kar
 
 在Oxford的[lecture12](http://www.cs.ox.ac.uk/people/nando.defreitas/machinelearning/lecture12.pdf)和UCL的[lecture6](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching_files/FA.pdf)都讲到了DQN，
 
+两条主线PG和Q-learning，分别有两个知名例子，
+Atari games：Q Learning with function approximation，
+AlphaGo ：uses policy gradients with Monte Carlo Tree Search (MCTS)
+
 ### Policy Gradients
- - a stochastic policy gradient Agent利用REINFORCE和LSTMs学习actor policy和value function baseline。
+karpathy的[这篇文章](http://karpathy.github.io/2016/05/31/rl/)详细介绍了Policy Gradient，用PG学习Atari游戏。
+ - Stochastic policy gradient Agent利用REINFORCE和LSTMs学习actor policy和value function baseline，在karpathy的文章中就是UP/DOWN的概率。
  - [Deterministic Policy Gradients](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Publications_files/deterministic-policy-gradients.pdf)
  - 
- 
+### Value Function Approximation
+DQN的例子
+
+karpathy在文章中说更多人倾向于用Policy Gradient，而不是Q-learning，因为PG是end-to-end，
 ## 测试
 参考[基于tensorflow的DQN](https://github.com/devsisters/DQN-tensorflow)，在
 
