@@ -38,5 +38,5 @@ karpathy在文章中说更多人倾向于用Policy Gradient，而不是Q-learnin
 
 对话论文中
 
-
+http://rll.berkeley.edu/deeprlcourse/
 
