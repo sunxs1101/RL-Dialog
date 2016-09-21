@@ -1,4 +1,4 @@
-# dialogue system project
+# Deep reinforcement learning and its application in dialogue system
 
 ## reinforcement learning
 karpathy给出了js版[reinforcement learning](http://cs.stanford.edu/people/karpathy/reinforcejs/)和[rnn/lstm](http://cs.stanford.edu/people/karpathy/recurrentjs/)。其中RNN用于字符生成的demo，将[Paul Graham](http://www.paulgraham.com/articles.html)的诗集编码成RNN的权重，
@@ -24,4 +24,4 @@ karpathy给出了js版[reinforcement learning](http://cs.stanford.edu/people/kar
 
  1. [Oxford reinforcement learning lecture](http://www.cs.ox.ac.uk/people/nando.defreitas/machinelearning/)
  2. [David Silver's RL class](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html)
- 3. 
+ 3. [Udacity](https://classroom.udacity.com/courses/ud600/lessons/4676850295/concepts/46733448110923)
