@@ -24,6 +24,6 @@ karpathy给出了js版[reinforcement learning](http://cs.stanford.edu/people/kar
 
  1. [Oxford reinforcement learning lecture](http://www.cs.ox.ac.uk/people/nando.defreitas/machinelearning/)
  2. [David Silver's RL class](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html)
- 3. [Udacity](https://classroom.udacity.com/courses/ud600/lessons/4676850295/concepts/46733448110923)
+ 3. [Udacity RL class](https://classroom.udacity.com/courses/ud600/lessons/4676850295/concepts/46733448110923)
 
 ## 算法实现
