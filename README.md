@@ -27,3 +27,9 @@ karpathy给出了js版[reinforcement learning](http://cs.stanford.edu/people/kar
  3. [Udacity RL class](https://classroom.udacity.com/courses/ud600/lessons/4676850295/concepts/46733448110923)
 
 ## 算法实现
+[OpenAI Gym](https://gym.openai.com/)提供了一个Reinforcement Learning的toolkit，
+
+对话论文中
+
+
+
