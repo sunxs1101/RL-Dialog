@@ -16,7 +16,7 @@ AlphaGo ：uses policy gradients with Monte Carlo Tree Search (MCTS)
 karpathy的[这篇文章](http://karpathy.github.io/2016/05/31/rl/)详细介绍了Policy Gradient，用PG学习Atari游戏。
  - Stochastic policy gradient Agent利用REINFORCE和LSTMs学习actor policy和value function baseline，在karpathy的文章中就是UP/DOWN的概率。
  - [Deterministic Policy Gradients](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Publications_files/deterministic-policy-gradients.pdf)
- - 
+ 
 ### Value Function Approximation
 DQN的例子
 
