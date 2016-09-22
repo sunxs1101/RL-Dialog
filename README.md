@@ -32,6 +32,7 @@ karpathy在文章中说更多人倾向于用Policy Gradient，而不是Q-learnin
  1. [Oxford reinforcement learning lecture](http://www.cs.ox.ac.uk/people/nando.defreitas/machinelearning/)
  2. [David Silver's RL class](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html)
  3. [Udacity RL class](https://classroom.udacity.com/courses/ud600/lessons/4676850295/concepts/46733448110923)
+ 4. [berkeley deep RL course](http://rll.berkeley.edu/deeprlcourse/)
 
 ## 算法实现
 [OpenAI Gym](https://gym.openai.com/)是一个Reinforcement Learning算法的toolkit，对agent结构没有假设，并且兼容tensorflow和theano。它包括两部分：1.gym开源库；2.OpenAI Gym service。
@@ -39,11 +40,11 @@ karpathy在文章中说更多人倾向于用Policy Gradient，而不是Q-learnin
 #### gym实践
  - case.py
  - case1.py
-
+这个cart-pole的例子，是用actor-critic的方式，actor-critic是Policy Gradient的一种方法，[这篇文章](http://brain.cc.kogakuin.ac.jp/~kanamaru/NN/CPRL/)比较好的介绍了这个方法。
 
 
 
 对话论文中
 
-http://rll.berkeley.edu/deeprlcourse/
+
 
