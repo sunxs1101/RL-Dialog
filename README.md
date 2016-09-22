@@ -34,7 +34,11 @@ karpathy在文章中说更多人倾向于用Policy Gradient，而不是Q-learnin
  3. [Udacity RL class](https://classroom.udacity.com/courses/ud600/lessons/4676850295/concepts/46733448110923)
 
 ## 算法实现
-[OpenAI Gym](https://gym.openai.com/)提供了一个Reinforcement Learning的toolkit，
+[OpenAI Gym](https://gym.openai.com/)是一个Reinforcement Learning算法的toolkit，对agent结构没有假设，并且兼容tensorflow和theano。它包括两部分：1.gym开源库；2.OpenAI Gym service。
+
+
+
+
 
 对话论文中
 
