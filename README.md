@@ -36,6 +36,9 @@ karpathy在文章中说更多人倾向于用Policy Gradient，而不是Q-learnin
 ## 算法实现
 [OpenAI Gym](https://gym.openai.com/)是一个Reinforcement Learning算法的toolkit，对agent结构没有假设，并且兼容tensorflow和theano。它包括两部分：1.gym开源库；2.OpenAI Gym service。
 
+#### gym实践
+ - case.py
+ - case1.py
 
 
 
