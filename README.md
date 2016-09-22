@@ -40,7 +40,9 @@ karpathy在文章中说更多人倾向于用Policy Gradient，而不是Q-learnin
 #### gym实践
  - case.py
  - case1.py
-这个cart-pole的例子，是用actor-critic的方式，actor-critic是Policy Gradient的一种方法，[这篇文章](http://brain.cc.kogakuin.ac.jp/~kanamaru/NN/CPRL/)比较好的介绍了这个方法。
+这个cart-pole的例子，是用actor-critic的方式，actor-critic是Policy Gradient的一种方法，[这篇文章](http://brain.cc.kogakuin.ac.jp/~kanamaru/NN/CPRL/)比较好的介绍了这个方法，参考论文 [A Survey of Actor-Critic Reinforcement Learning:Standard and Natural Policy Gradients](http://busoniu.net/files/papers/ivo_smcc12_survey.pdf)
+
+
 
 
 
