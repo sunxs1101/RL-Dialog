@@ -34,10 +34,23 @@ karpathy在文章中说更多人倾向于用Policy Gradient，而不是Q-learnin
  3. [Udacity RL class](https://classroom.udacity.com/courses/ud600/lessons/4676850295/concepts/46733448110923)
  4. [berkeley deep RL course](http://rll.berkeley.edu/deeprlcourse/)
 
-## 算法实现
+## dqn算法实现
+参考[devsisters代码](https://github.com/devsisters/DQN-tensorflow)，这个代码依赖
+ - Python 
+ - gym
+ - tqdm
+ - OpenCV2
+ - TensorFlow
+
+ 1. [安装OpenCV2](http://docs.opencv.org/2.4/doc/tutorials/introduction/linux_install/linux_install.html)
+ 按流程将opencv git clone到/home/crawler/tensorflow/dqn/gym/DQN-tensorflow/opencv
+ 2. 
+
+
 [OpenAI Gym](https://gym.openai.com/)是一个Reinforcement Learning算法的toolkit，对agent结构没有假设，并且兼容tensorflow和theano。它包括两部分：1.gym开源库；2.OpenAI Gym service。
 
-#### gym实践
+### gym实践
+/home/crawler/tensorflow/dqn/gym路径下，
  - case.py
  - case1.py
 这个cart-pole的例子，是用actor-critic的方式，actor-critic是Policy Gradient的一种方法，[这篇文章](http://brain.cc.kogakuin.ac.jp/~kanamaru/NN/CPRL/)比较好的介绍了这个方法，参考论文 [A Survey of Actor-Critic Reinforcement Learning:Standard and Natural Policy Gradients](http://busoniu.net/files/papers/ivo_smcc12_survey.pdf)。例子中cart-pole就是environment，gym库的主要目的是提供environment的集合，通过下面的命令查看
@@ -47,10 +60,37 @@ print(envs.registry.all())
 ```
 gym简化记录你的算法性能
 
+### 
 
 
 
-对话论文中
+两种方法
+
+ - JekyII机制：username.github.io，访问这个时，JekyII会解析username用户下，username.github.io项目的master分支
+ - 阮：username/blog 的 gh-pages 分支。cxwangyi.github.com
+阮的文章中详细记录每个文件每个目录的作用，但jekyll new命令可以直接生成这些文件和目录。
+
+ - [jekyllrb quickstart](https://jekyllrb.com/docs/quickstart/) 
+
+实现用localhost访问，没有结合github
+```
+~ $ gem install jekyll bundler
+~ $ jekyll new myblog
+~ $ cd myblog
+新建一个名为Gemfile的文件，内容如下
+source 'https://rubygems.org'
+gem 'github-pages', group: :jekyll_plugins
+~/myblog $ bundle install
+~/myblog $ bundle exec jekyll serve
+# => Now browse to http://localhost:4000
+```
+
+1. 按https://pages.github.com/设置io
+2. Jekyll是一个静态地址生成器，先安装sudo apt install ruby，按照https://jekyllrb.com/docs/quickstart/安装Jekyll
+
+Jekyll的好处：
+1. 你可以用MD而不是HTML，
+2. 添加Jekyll theme
 
 
-
+https://www.zhihu.com/question/28123816
