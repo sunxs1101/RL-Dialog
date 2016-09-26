@@ -20,12 +20,14 @@ karpathy的[这篇文章](http://karpathy.github.io/2016/05/31/rl/)详细介绍�
 ### Value Function Approximation
 DQN的例子
 
-karpathy在文章中说更多人倾向于用Policy Gradient，而不是Q-learning，因为PG是end-to-end，
+karpathy在文章中说更多人倾向于用Policy Gradient，而不是Q-learning，因为PG是end-to-end，当调参好时，PG比Q-learning效果好。
 ## 测试
 参考[基于tensorflow的DQN](https://github.com/devsisters/DQN-tensorflow)，在
 
 ## 参考
  - Playing Atari with Deep Reinforcement Learning论文[Human-level control through deep reinforcement learning](http://home.uchicago.edu/%7Earij/journalclub/papers/2015_Mnih_et_al.pdf)
+
+这篇论文中讲到当一个非线性函数近似比如神经网络用于表示Q函数时，RL通常不稳定，甚至发散。
 
 ## 强化学习学习资料
 
