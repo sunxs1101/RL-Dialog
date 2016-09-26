@@ -27,7 +27,10 @@ karpathy在文章中说更多人倾向于用Policy Gradient，而不是Q-learnin
 ## 参考
  - Playing Atari with Deep Reinforcement Learning论文[Human-level control through deep reinforcement learning](http://home.uchicago.edu/%7Earij/journalclub/papers/2015_Mnih_et_al.pdf)
 
-这篇论文中讲到当一个非线性函数近似比如神经网络用于表示Q函数时，RL通常不稳定，甚至发散。
+这篇论文中讲到当一个非线性函数近似比如神经网络用于表示Q函数时，RL通常不稳定，甚至发散，DQN用experience replay和fixed Q-targets来增加稳定性。
+
+ - experience replay
+ 
 
 ## 强化学习学习资料
 
