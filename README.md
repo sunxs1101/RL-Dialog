@@ -42,14 +42,11 @@ karpathy在文章中说更多人倾向于用Policy Gradient，而不是Q-learnin
  - OpenCV2
  - TensorFlow
 
- 1. [安装OpenCV2](http://docs.opencv.org/2.4/doc/tutorials/introduction/linux_install/linux_install.html)
- 按流程将opencv git clone到/home/crawler/tensorflow/dqn/gym/DQN-tensorflow/opencv
- 2. 
-
-
+ 1. [OpenCV2安装](http://docs.opencv.org/2.4/doc/tutorials/introduction/linux_install/linux_install.html)
+ 按流程将opencv git clone到/home/crawler/tensorflow/dqn/gym/DQN-tensorflow/opencv ，但这么做很繁琐，直接用命令apt-get install python-opencv 就可以安装完成，然后import cv2测试。
+ 2. gym安装
 [OpenAI Gym](https://gym.openai.com/)是一个Reinforcement Learning算法的toolkit，对agent结构没有假设，并且兼容tensorflow和theano。它包括两部分：1.gym开源库；2.OpenAI Gym service。
 
-### gym实践
 /home/crawler/tensorflow/dqn/gym路径下，
  - case.py
  - case1.py
@@ -58,7 +55,8 @@ karpathy在文章中说更多人倾向于用Policy Gradient，而不是Q-learnin
 from gym import envs
 print(envs.registry.all())
 ```
-gym简化记录你的算法性能
+在~/tensorflow/dqn/gym/DQN-tensorflow路径下，执行main.py程序，测试dqn。
+
 
 ### 搭建博客--未完
 
