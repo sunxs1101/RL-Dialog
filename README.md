@@ -62,6 +62,10 @@ print(envs.registry.all())
 ```
 在~/tensorflow/dqn/gym/DQN-tensorflow路径下，执行main.py程序，测试dqn。
 
+### zhihu上的例子
+https://zhuanlan.zhihu.com/p/21477488?refer=intelligentunit
+
+
 
 ### 搭建博客--未完
 
