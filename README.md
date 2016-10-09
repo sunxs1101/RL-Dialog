@@ -21,6 +21,10 @@ karpathy的[这篇文章](http://karpathy.github.io/2016/05/31/rl/)详细介绍�
 DQN的例子
 
 karpathy在文章中说更多人倾向于用Policy Gradient，而不是Q-learning，因为PG是end-to-end，当调参好时，PG比Q-learning效果好。
+### critic-Actor算法
+参考[]()以Cart-pole为例，构建一个控制器，系统状态(theta,w,x,v)，critic记载reward v(theta,w,x,v)，然后Actor u=u(theta,w,x,v)+
+
+
 ## 测试
 参考[基于tensorflow的DQN](https://github.com/devsisters/DQN-tensorflow)，在
 
