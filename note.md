@@ -12,4 +12,6 @@ http://blog.dennybritz.com/2015/09/11/reimagining-language-learning-with-nlp-and
 的形式表示，Q函数表示长期的收益，用deep rnn网络来拟合Q函数，rnn有两个模块，第一个将文本转化为向量表示，这部分是用LSTM执行的；第二个模块
 在给定第一个计算出来的向量表示的情况下，对动作评分。
 
+ - [On-line Active Reward Learning for Policy Optimisation](https://arxiv.org/pdf/1605.07669v2.pdf)
 
+在强化学习的研究中，如何定义和学习奖励机制（reward）是十分重要的，然而，传统的用户反馈的方法开销很大，在实用系统中无法承受。文章提出一种在线学习的框架，首先通过循环神经网络生成对话表示，进而利用基于高斯过程的主动学习机制大大降低了人工标注的代价。University of Cambridge这个研究组在对话系统方面有着长期深入的研究工作，建议感兴趣的同学可以多关注这方面的工作。
