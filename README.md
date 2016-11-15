@@ -22,7 +22,10 @@ DQN的例子
 
 karpathy在文章中说更多人倾向于用Policy Gradient，而不是Q-learning，因为PG是end-to-end，当调参好时，PG比Q-learning效果好。
 ### critic-Actor算法
-参考[]()以Cart-pole为例，构建一个控制器，系统状态(theta,w,x,v)，critic记载reward v(theta,w,x,v)，然后Actor u=u(theta,w,x,v)+
+参考[]()以Cart-pole为例，构建一个控制器，系统状态(theta,w,x,v)，critic记载reward v(theta,w,x,v)，然后Actor u=u(theta,w,x,v)+rn，F=Fmax(u)施加一个F给environment，通过获取大的V(theta,w,x,v)值，得到摆的直立状态，直立状态获取最大的reward。然而，V(theta,w,x,v)是未知的值，必须做函数近似来获取V。
+ 
+ - critic来估计V(theta,w,x,v)
+ - Actor
 
 
 ## 测试
