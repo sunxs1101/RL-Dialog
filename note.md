@@ -15,3 +15,13 @@ http://blog.dennybritz.com/2015/09/11/reimagining-language-learning-with-nlp-and
  - [On-line Active Reward Learning for Policy Optimisation](https://arxiv.org/pdf/1605.07669v2.pdf)
 
 在强化学习的研究中，如何定义和学习奖励机制（reward）是十分重要的，然而，传统的用户反馈的方法开销很大，在实用系统中无法承受。文章提出一种在线学习的框架，首先通过循环神经网络生成对话表示，进而利用基于高斯过程的主动学习机制大大降低了人工标注的代价。University of Cambridge这个研究组在对话系统方面有着长期深入的研究工作，建议感兴趣的同学可以多关注这方面的工作。
+
+
+### Deep Reinforcement Learning with a Natural Language Action Space
+
+摘要：这篇文章介绍了一个新的带有深度神经网络的强化学习架构，来处理由自然语言描述的state和action空间，这个在text-based games中也出现了。
+DRRN，这个架构用独立的词向量表示行动和状态空间，词向量与interaction function结合来估计Q-function。
+实验：在两个text games中评估DRRN，性能比其他DQN架构要好，并且在paraphrased action descriptions实验中，这个模型不仅能记忆text string，
+还可以提取意义。
+
+这篇文章关注序列决策任务的学习策略，用自然语言描述强化学习中的state和action。
