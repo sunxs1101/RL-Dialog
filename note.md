@@ -1,4 +1,7 @@
-## reinforcement learning在nlp中的应用
+# reinforcement learning in nlp: A survey
+
+强化学习在nlp领域的应用主要有对话管理和文本生成两个方面。Q-Learning [34] is a popular form of RL. This model-free technique is used to learn an optimal action-value function Q(s, a)
+
 
 http://blog.dennybritz.com/2015/09/11/reimagining-language-learning-with-nlp-and-reinforcement-learning/
 
