@@ -3,7 +3,6 @@
 http://blog.dennybritz.com/2015/09/11/reimagining-language-learning-with-nlp-and-reinforcement-learning/
 
 [Language Understanding for Text-based Games using Deep Reinforcement Learning](http://people.csail.mit.edu/karthikn/pdfs/mud-play15.pdf)
-笔记：
 
 论文为text-based games学习控制策略，采用deep reinforcement learning架构来学习状态表示和动作策略，游戏的rewards作为反馈。这个架构使我们可以将
 文本映射为向量表征，这样会捕捉游戏状态的语义。
