@@ -4,6 +4,9 @@
 karpathy给出了js版[reinforcement learning](http://cs.stanford.edu/people/karpathy/reinforcejs/)和[rnn/lstm](http://cs.stanford.edu/people/karpathy/recurrentjs/)。其中RNN用于字符生成的demo，将[Paul Graham](http://www.paulgraham.com/articles.html)的诗集编码成RNN的权重，
 
 ### deep reinforcement learning
+
+[workshop](http://rll.berkeley.edu/deeprlworkshop/)
+
 [Mnih etal.](Playing Atari with Deep Reinforcement Learning)的Atari Game Playing游戏很好的描述Deep Reinforcement Learning的作用，用卷积神经网络对action-value函数Q(s,a)建模，
 
 在Oxford的[lecture12](http://www.cs.ox.ac.uk/people/nando.defreitas/machinelearning/lecture12.pdf)和UCL的[lecture6](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching_files/FA.pdf)都讲到了DQN，
@@ -27,6 +30,10 @@ karpathy在文章中说更多人倾向于用Policy Gradient，而不是Q-learnin
  - critic来估计V(theta,w,x,v)
  - Actor
 
+在对话系统中的应用
+http://www.maluuba.com/blog/2016/11/23/deep-reinforcement-learning-in-dialogue-systems
+
+[Policy Networks with Two-Stage Training for Dialogue Systems](https://arxiv.org/pdf/1606.03152v4.pdf)
 
 ## 测试
 参考[基于tensorflow的DQN](https://github.com/devsisters/DQN-tensorflow)，在
