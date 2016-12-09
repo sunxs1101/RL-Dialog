@@ -36,8 +36,10 @@ http://www.maluuba.com/blog/2016/11/23/deep-reinforcement-learning-in-dialogue-s
 
 [Policy Networks with Two-Stage Training for Dialogue Systems](https://arxiv.org/pdf/1606.03152v4.pdf)
 
-## 测试
+## Implementations
 参考[基于tensorflow的DQN](https://github.com/devsisters/DQN-tensorflow)，在
+
+https://github.com/dennybritz/reinforcement-learning
 
 ## 参考
  - Playing Atari with Deep Reinforcement Learning论文[Human-level control through deep reinforcement learning](http://home.uchicago.edu/%7Earij/journalclub/papers/2015_Mnih_et_al.pdf)
