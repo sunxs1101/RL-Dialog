@@ -41,6 +41,10 @@ http://www.maluuba.com/blog/2016/11/23/deep-reinforcement-learning-in-dialogue-s
 
 https://github.com/dennybritz/reinforcement-learning
 
+## 展望
+[John Schulman:nuts-and-bolts](http://101.96.8.165/rll.berkeley.edu/deeprlcourse/docs/nuts-and-bolts.pdf)
+
+
 ## 参考
  - Playing Atari with Deep Reinforcement Learning论文[Human-level control through deep reinforcement learning](http://home.uchicago.edu/%7Earij/journalclub/papers/2015_Mnih_et_al.pdf)
 
