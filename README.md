@@ -6,8 +6,12 @@ karpathy给出了js版[reinforcement learning](http://cs.stanford.edu/people/kar
 http://it.sohu.com/20161202/n474728555.shtml
 ### deep reinforcement learning
 
-[workshop](http://rll.berkeley.edu/deeprlworkshop/)
-
+ - [workshop](http://rll.berkeley.edu/deeprlworkshop/)
+ - [zhihu整理](https://zhuanlan.zhihu.com/p/23600620)
+ - [Benchmarking Deep Reinforcement Learning for Continuous Control](https://arxiv.org/pdf/1604.06778v3.pdf)
+ - [Deep Reinforcement Learning in Large Discrete Action Spaces](http://101.96.8.165/tx.technion.ac.il/~danielm/icml_workshop/12.pdf)
+ - []()
+ 
 [Mnih etal.](Playing Atari with Deep Reinforcement Learning)的Atari Game Playing游戏很好的描述Deep Reinforcement Learning的作用，用卷积神经网络对action-value函数Q(s,a)建模，
 
 在Oxford的[lecture12](http://www.cs.ox.ac.uk/people/nando.defreitas/machinelearning/lecture12.pdf)和UCL的[lecture6](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching_files/FA.pdf)都讲到了DQN，
