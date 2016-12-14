@@ -14,7 +14,11 @@ http://blog.dennybritz.com/2015/09/11/reimagining-language-learning-with-nlp-and
 
  - [On-line Active Reward Learning for Policy Optimisation in Spoken Dialogue Systems](https://arxiv.org/pdf/1605.07669v2.pdf)
 
-在强化学习的研究中，如何定义和学习奖励机制（reward）是十分重要的，然而，传统的用户反馈的方法开销很大，在实用系统中无法承受。文章提出一种在线学习的框架，首先通过循环神经网络生成对话表示，进而利用基于高斯过程的主动学习机制大大降低了人工标注的代价。
+这篇是ACL2016学生Best Paper。在强化学习的研究中，如何定义和学习奖励机制（reward）是十分重要的，然而，传统的用户反馈的方法开销很大，在实用系统中无法承受。文章提出一种在线学习的框架，首先通过循环神经网络生成对话表示，进而利用基于高斯过程的主动学习机制大大降低了人工标注的代价。
+摘要：计算精确的reward function对于通过强化学习来优化一个对话策略很重要。实际应用中，用显式的用户反馈作为reward信号往往不可靠并且难收集。如果用户的intent提前知道，或者数据可获取用于离线预训练，但实际上这两个都不能应用于大多数实际系统的应用。这里我们提出了一个在线学习架构，对话策略通过基于高斯过程的主动学习机制来训练，高斯过程在一个用rnn encoder-decoder生成的连续空间对话表示中作用。实验表明提出的这个架构能够显著降低数据注释成本和噪声用户反馈。
+
+通过Gaussian过程分类法与一种基于神经网络的无监管式对话嵌入方法，提出了一种主动的奖赏函数学习模型。通过Reinforcement Learning的方式，主动询问客户收集更多的信息来得到精确的奖赏函数，实现在线学习策略。相比人工语聊标注以及离线模型的方式上有很大的创新。 
+
 
  - [Deep Reinforcement Learning with a Natural Language Action Space](https://arxiv.org/pdf/1511.04636v5.pdf)
 
@@ -34,15 +38,82 @@ http://blog.dennybritz.com/2015/09/11/reimagining-language-learning-with-nlp-and
 
 seq2seq框架在nlg中取得很大成功，也发展出attention这种机制，但这些都是判别模型，训练后用于估计条件输出分布。这篇文章用深度生成模型计算联合概率分布，采用离散变分自编码机(VAE)用于推断。VAE依赖reparameterisation trick，并不适用于离散隐语言模型，这里采用REINFORCE算法减轻基于采样的变分推断存在的高方差问题。文章引用了两篇REINFORCE算法的文章，分别是Andriy Mnih的[Neural Variational Inference and Learning in Belief Networks](https://arxiv.org/pdf/1402.0030v2.pdf)和Volodymyr Mnih的文章[Recurrent Models of Visual Attention](https://arxiv.org/pdf/1406.6247v1.pdf)，这两篇文章用梯度来训练推断网络，这可以看做REINFORCE算法的一个特例。REINFORCE算法最早在[Simple Statistical Gradient-Following Algorithms for Connectionist Reinforcement Learning](https://webdocs.cs.ualberta.ca/~sutton/williams-92.pdf)提出，它是一类联合的reinforcement learning算法，用于有stochastic units的连接网络。
 
+插一句：[nips2016](http://it.sohu.com/20161213/n475750438.shtml)上David Blei 深入介绍了变分推理（Variational Inference）研究的最近的多项进展。最有影响的还是重新参数化（reparameterization）的技巧，该技巧可以通过随机变量实现反向传播，同时也推动了变自编码器上最新进展。
+
  - [Deep Reinforcement Learning with a Combinatorial Action Space for Predicting Popular Reddit Threads](https://arxiv.org/pdf/1606.03667.pdf)
  
 本文是[Deep Reinforcement Learning with a Natural Language Action Space](https://arxiv.org/pdf/1511.04636v5.pdf)延续，用deep reinforcement learning架构做online popularity prediction和tracking，采用Reddit的数据，两方面贡献：一，新的强化学习任务，状态和动作由自然语言定义；二，提出新的deep reinforcement learning架构DRRN-Sum和DRRN-BiLSTM用于解决与自然语言关联的动作空间，效果比DRRN,per-action DQN和其他处理自然语言动作空间的DQN变种要好。
 
- - 2015
- 
 ## 3.[ACL 2016 Highlights]
+
+### ACL2016优秀论文解读
+
+## 4.[NIPS]
+
+机器学习方法可以分为生成方法（generative approach）和判别方法（discriminative approach），所学到的模型分别称为生成式模型（generative model）和判别式模型（discriminative model）。其中近两年来流行的生成式模型主要分为三种方法：
+
+ - 生成对抗网络（GAN：Generative Adversarial Networks） 
+ - 变分自编码器（VAE: Variational Autoencoders） 
+ - 自回归模型（Autoregressive models） 
+
+#### [DeepMind NIPS 2016论文盘点Part1](http://it.sohu.com/20161203/n474811175.shtml)
+
+ - [safe and efficient off-policy reinforcement learning](https://arxiv.org/abs/1606.02647)
+
+我们的目标是设计出带有两个所需特性的强化学习算法。首先，要使用离策略数据（off-policy data），当我们使用记忆再现（memory replay，即观察日志数据）时它对探索很重要。其次，要使用多步骤返回（multi-steps returns）以便更快地传递反馈和避免近似/估计误差（approximation/estimation errors）的积累。这两个属性在深度强化学习中是至关重要的。
+
+ - [Deep Exploration via Bootstrapped DQN](https://papers.nips.cc/paper/6501-deep-exploration-via-bootstrapped-dqn)
+
+在复杂环境中进行有效的探索对强化学习（RL）来说仍然是一个巨大的挑战。最近我们看到在强化学习领域出现了很多突破，但这些算法中很多都需要巨量的数据（数百万次博弈），之后才能学会做出好的决策。在许多真实世界环境中，我们是无法获得这样大量的数据的。
+
+这些算法学习如此之慢的原因之一是它们并没有收集到用于学习该问题的「正确（right）」数据。这些算法使用抖动（dithering）（采取随机动作）来探索他们的环境——这种方法比起在多个时间步骤上对信息策略进行优先级排序的深度探索（deep exploration），效率指数级地更差。对于使用深度探索进行统计学上高效的强化学习已经有很多文献了，但问题是这些算法中没有一个是可以通过深度学习解决的……而现在我们有了。
+
+这篇论文的关键突破如下：
+
+ - 我们提出了第一个结合了深度学习与深度探索的实用强化学习算法：Bootstrapped DQN。
+ - 我们表明这个算法可以给学习速度带来指数级的提升。
+ - 我们展示了在 Atari 2600 上的当前最佳的结果。
+
+视频连接：https://www.youtube.com/playlist?list=PLdy8eRAW78uLDPNo1jRv8jdTx7aup1ujM
+#### [part2](http://it.sohu.com/20161207/n475166788.shtml)
+#### [nips其它有价值的论文](http://it.sohu.com/20161213/n475750438.shtml)
+ - Value Iteration Network
+令人印象深刻：该论文的主要创新在于其模型包含了一个可微分的「规划模块（planning module），这让网络可以做出规划并更好地泛化到其它从未见过的领域。
+
+ - [Sequential Neural Models with Stochastic Layers 以及 Phased LSTMs](http://ulrichpaquet.com/Papers/1605.07571v1.pdf)
+前者将 状态空间模型（State Space Model）的想法和 RNN 结合起来，充分利用了两个领域的最好的东西。后者将「time gate」添加到了 LSTM 中，这显著改善了针对长序列数据的优化和表现。
+
+- 通过对抗训练生成文本（Generating Text via Adversarial Training）、用于带有 Gumbel-softmax 分布的离散元素的序列的 GAN（GANS for Sequences of Discrete Elements with the Gumbel-softmax Distribution）、对话模型的对抗式评估（Adversarial Evaluation of Dialogue Models）。短评：我对模拟和评估对话系统的技术很感兴趣。
+
+- 构建像人一样学习和思考的机器（Building Machines That Learn and Think Like People）。短评：这个主题演讲非常好，所以我想要深入了解一下论文。这个演讲探索了人类利用大量先验知识的方式，以及我们可以如何将其整合进我们的系统中；其中一些特定的观察结果为我们带来了一些可以执行的研究方向。（这似乎和对话有关，因为这个研究可能能够解释类似「the blorf flazzed the peezul」这样的无意义陈述的伪可理解性（pseudo-intelligibility）。 
+
+- 跨许多个数量级学习价值（Learning values across many orders of magnitude）。短评：粗略看这可能是关于优化（optimization）的，但在反事实的背景（counterfactual setups）中，这个问题是很普遍的。我可是很喜欢把规模不变性用作一个有用的先验知识（scale invariance as a useful prior）。
+
+- 用于神经结构预测的回报增强最大似然（Reward Augmented Maximum Likelihood for Neural Structured Prediction）短评：这可以被看作是另一种使用世界的模型来转移强化学习的样本复杂性的方法。（比如：如果编辑距离（edit distance）只是该回报的初始模型呢？
+
+- 安全高效的离策略强化学习（Safe and Efficient Off-Policy Reinforcement Learning）。短评：这是一个重要的设置。这种特别的调整让人联想到了之前这一领域提出的估计器（estimator，参阅论文《Learning from Logged Implicit Exploration Data》）；但尽管如此，这还是很有意思。
+
+- Improved dropout for shallow deep learning：提出一种改进版本dropout 
+链接：https://www.youtube.com/watch?v=oZOOfaT94iU&feature=youtu.be
 
 ## 4.[SIGDIAL 2016 Highlights]
 
-## 5.[NIPS,ICML]
+## 5.[ICLR 2017](http://it.sohu.com/20161204/n474874145.shtml)
+[ICLR 2017 有什么值得关注的亮点？](https://www.zhihu.com/question/52311422/answer/130508707)
+
+ - [GENERATING LONG AND DIVERSE RESPONSES WITH NEURAL CONVERSATION MODELS](http://cslt.riit.tsinghua.edu.cn/mediawiki/images/8/83/Dedaff23ad393c48fe7b7989542318a02dc0a06e.pdf)
+ - [Learning to compose words into sentences with reinforcement learning]()
+ 
+ - [NEURAL ARCHITECTURE SEARCH WITH REINFORCEMENT LEARNING](https://openreview.net/pdf?id=r1Ue8Hcxg)
+来自Google Brain. 利用RL来优化RNN的结构。神经网络不容易设计，本文用RL训练RNN来生成神经网络的模型描述。
+
+ - [DESIGNING NEURAL NETWORK ARCHITECTURES USING REINFORCEMENT LEARNING](https://arxiv.org/pdf/1611.02167v2.pdf)
+来自MIT media lab．利用RL来优化CNN的结构。
+
+ - [GENERATING LONG AND DIVERSE RESPONSES WITH NEURAL CONVERSATION MODELS]()
+ 
+ - [Learning to compose words into sentences with reinforcement learning](https://arxiv.org/pdf/1611.09100v1.pdf)
+摘要：用强化学习学习树结构神经网络，用于计算自然语言句子的表示。之前关于树结构模型方面的工作，树被作为输入或者用来自显式treebank annotations的监督描述，本文的树结构被优化用于提升downstream task的性能。实验表明，学习task-specific composition顺序比基于treebank的序列编码和递归编码都要好。
+
+
 
