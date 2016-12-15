@@ -63,6 +63,7 @@ https://github.com/dennybritz/reinforcement-learning
  2. [David Silver's RL class](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html)
  3. [Udacity RL class](https://classroom.udacity.com/courses/ud600/lessons/4676850295/concepts/46733448110923)
  4. [berkeley deep RL course](http://rll.berkeley.edu/deeprlcourse/) 这个课程是最全的，包括policy-gradient，action-value approximation等。
+ 5. http://www.wildml.com/
 
 ## dqn算法实现
 参考[devsisters代码](https://github.com/devsisters/DQN-tensorflow)，这个代码依赖
