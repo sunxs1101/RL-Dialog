@@ -105,15 +105,18 @@ seq2seq框架在nlg中取得很大成功，也发展出attention这种机制，�
  - [Learning to compose words into sentences with reinforcement learning]()
  
  - [NEURAL ARCHITECTURE SEARCH WITH REINFORCEMENT LEARNING](https://openreview.net/pdf?id=r1Ue8Hcxg)
-来自Google Brain. 利用RL来优化RNN的结构。神经网络不容易设计，本文用RL训练RNN来生成神经网络的模型描述。
-
+来自Google Brain. 利用RL来优化RNN的结构。神经网络不容易设计，需要很多专业知识。本文用RNN生成神经网络的模型描述，用强化学习训练这个RNN来最大化生成的网络结构的准确率。在一些数据集上，会比现有的state-of-the-art model，如LSTM要好。
+论文提出神经结构搜索，一个基于梯度的方法来寻找好的结构。准确率作为reward signal，计算policy gradient来更新控制器，因此下次迭代时，控制器就会给高准确率的结构更高的可能性。
+也是用REINFORCE来训练， 
  - [DESIGNING NEURAL NETWORK ARCHITECTURES USING REINFORCEMENT LEARNING](https://arxiv.org/pdf/1611.02167v2.pdf)
 来自MIT media lab．利用RL来优化CNN的结构。
 
  - [GENERATING LONG AND DIVERSE RESPONSES WITH NEURAL CONVERSATION MODELS]()
  
  - [Learning to compose words into sentences with reinforcement learning](https://arxiv.org/pdf/1611.09100v1.pdf)
+
+这篇文章将强化学习用于句法分析
 摘要：用强化学习学习树结构神经网络，用于计算自然语言句子的表示。之前关于树结构模型方面的工作，树被作为输入或者用来自显式treebank annotations的监督描述，本文的树结构被优化用于提升downstream task的性能。实验表明，学习task-specific composition顺序比基于treebank的序列编码和递归编码都要好。
-
-
-
+有三种构建句子的向量表示的方法：1.RNN，将RNN最终的隐状态作为句子表示；2.tree-structured network递推的将词表示组成句子的表示，不同于序列模型，这种模型的结构根据句子的句法结构组织；3.用CNN以颠倒的方式构建表示。本文的工作可以看做前两个方法的折中，不用树结构显式的监督，而是用强化学习来学习树结构，将计算的句子表示作为reward signal。不同于序列RNN忽略树结构，我们的模型仍然为每个句子生成隐树，用它构建组合。我们的假设是
+模型包括两部分：一个句子表示模型和一个用于学习树结构的强化学习算法，这个树结构在句子表示模型中使用。本文的句子表示模型遵循SPINN，SPINN是一个shift-reduce parser，采用LSTM作为它的组合函数。parser维护一个索引指针和一个栈，为了从句法上分析句子，parser会执行一系列操作，每个时间点的操作分SHIFT和REDUCE两种。SHIFT操作将词Xp推入栈，然后将指针移动到下一个词；REDUCE操作从栈中弹出两个元素，将它们组成一个元素压入栈。SHIFT操作在parse树中引入一个新的叶子节点，REDUCE操作将两个节点合并成一个成分。
+强化学习：想法是用强化学习（policy gradient法）来发现最好的树结构，用Policy network来参数化action（SHIFT，REDUCE），也是采用REINFORCE算法来学习Wr，REINFORCE算法是policy gradient方法的一个例子。
