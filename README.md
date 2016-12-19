@@ -53,9 +53,18 @@ https://github.com/dennybritz/reinforcement-learning
  - Playing Atari with Deep Reinforcement Learning论文[Human-level control through deep reinforcement learning](http://home.uchicago.edu/%7Earij/journalclub/papers/2015_Mnih_et_al.pdf)
 
 这篇论文中讲到当一个非线性函数近似比如神经网络用于表示Q函数时，RL通常不稳定，甚至发散，DQN用experience replay和fixed Q-targets来增加稳定性。
+参考RL(sutton)p385.
 
+ - motivation
+ 
+While these methods might have produced results comparable to DQN’s, they would have been more complicated to implement and would have significantly increased the time needed for learning. Another motivation for using Q-learning was that DQN used the experience replay method。Mnith modified the basic Q-learning procedure in three ways, as follows
+ 
  - experience replay
  
+This method stores the agent's experience at each time step in a replay memory that is accessed to perform the weight updates.
+
+
+参考
 
 ## 强化学习学习资料
 
