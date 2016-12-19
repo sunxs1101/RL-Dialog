@@ -20,3 +20,6 @@ Jeff Dean:强化学习的想法是，你未必需要清楚你要采取的行动�
 最后，在整个一系列的行动之后，你得到一些反馈信号，在你得到反馈信号的同时能将信用或责任分配到你所采取的所有行动。
 
  - 挑战：当你所处的行动状态非常宽泛时，此时使用强化学习会有一些挑战。
+
+## survey
+A dialogue policy is formulated as a Partially Observable Markov Decision Process(POMDP) which models the uncertainty existing in both the users' goals and the outputs of the ASR and the NLU.
