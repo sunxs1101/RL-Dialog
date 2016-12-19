@@ -120,3 +120,10 @@ seq2seq框架在nlg中取得很大成功，也发展出attention这种机制，�
 有三种构建句子的向量表示的方法：1.RNN，将RNN最终的隐状态作为句子表示；2.tree-structured network递推的将词表示组成句子的表示，不同于序列模型，这种模型的结构根据句子的句法结构组织；3.用CNN以颠倒的方式构建表示。本文的工作可以看做前两个方法的折中，不用树结构显式的监督，而是用强化学习来学习树结构，将计算的句子表示作为reward signal。不同于序列RNN忽略树结构，我们的模型仍然为每个句子生成隐树，用它构建组合。我们的假设是
 模型包括两部分：一个句子表示模型和一个用于学习树结构的强化学习算法，这个树结构在句子表示模型中使用。本文的句子表示模型遵循SPINN，SPINN是一个shift-reduce parser，采用LSTM作为它的组合函数。parser维护一个索引指针和一个栈，为了从句法上分析句子，parser会执行一系列操作，每个时间点的操作分SHIFT和REDUCE两种。SHIFT操作将词Xp推入栈，然后将指针移动到下一个词；REDUCE操作从栈中弹出两个元素，将它们组成一个元素压入栈。SHIFT操作在parse树中引入一个新的叶子节点，REDUCE操作将两个节点合并成一个成分。
 强化学习：想法是用强化学习（policy gradient法）来发现最好的树结构，用Policy network来参数化action（SHIFT，REDUCE），也是采用REINFORCE算法来学习Wr，REINFORCE算法是policy gradient方法的一个例子。
+
+ - [Framework of Automatic Text Summarization Using Reinforcement Learning](http://aclweb.org/anthology//D/D12/D12-1024.pdf)
+ 
+ - [On-line Active Reward Learning for Policy Optimisation in Spoken Dialogue Systems](https://arxiv.org/pdf/1605.07669v2.pdf)
+ - [End-to-End Reinforcement Learning of Dialogue Agents for Information Access](https://arxiv.org/pdf/1609.00777v2)
+ - [Gaussian processes for POMDP-based dialogue manager optimisation](http://mi.eng.cam.ac.uk/~sjy/papers/gayo14.pdf)
+ 
