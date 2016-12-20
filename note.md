@@ -123,13 +123,14 @@ seq2seq框架在nlg中取得很大成功，也发展出attention这种机制，�
 
  - [Framework of Automatic Text Summarization Using Reinforcement Learning](http://aclweb.org/anthology//D/D12/D12-1024.pdf)
  
+ - [Human-level control through deep reinforcement learning](http://home.uchicago.edu/~arij/journalclub/papers/2015_Mnih_et_al.pdf)提出DQN模型
  - [On-line Active Reward Learning for Policy Optimisation in Spoken Dialogue Systems](https://arxiv.org/pdf/1605.07669v2.pdf)
  - [End-to-End Reinforcement Learning of Dialogue Agents for Information Access](https://arxiv.org/pdf/1609.00777v2)
  - [Gaussian processes for POMDP-based dialogue manager optimisation](http://mi.eng.cam.ac.uk/~sjy/papers/gayo14.pdf)
- - [Policy Learning for Domain Selection in an Extensible Multi-domain Spoken Dialogue System,2014](https://www.baidu.com/link?url=ie-xHTHVQr-5UOaJ0WNMzP9EnRvSfnGvChbF9ON36jg6hfYal5vzRxogLhfOiSuwxE3ztrPV7YwbV5iA3H0lrK&wd=&eqid=ecc8c12600001d04000000035857ce37)
+ - [Policy Learning for Domain Selection in an Extensible Multi-domain Spoken Dialogue System](https://www.baidu.com/link?url=ie-xHTHVQr-5UOaJ0WNMzP9EnRvSfnGvChbF9ON36jg6hfYal5vzRxogLhfOiSuwxE3ztrPV7YwbV5iA3H0lrK&wd=&eqid=ecc8c12600001d04000000035857ce37)
  - [End-to-end LSTM-based dialog control optimized with supervised and reinforcement learning](https://arxiv.org/pdf/1606.01269.pdf)
  - [Towards End-to-End Learning for Dialog State Tracking and Management using Deep Reinforcement Learning](https://arxiv.org/pdf/1606.02560v2.pdf)
- - [https://arxiv.org/pdf/1511.08099v1.pdf](Strategic Dialogue Management via Deep Reinforcement Learning)
- 
+ - [Strategic Dialogue Management via Deep Reinforcement Learning](https://arxiv.org/pdf/1511.08099v1.pdf)
  - [Simultaneous Machine Translation using Deep Reinforcement Learning](http://tx.technion.ac.il/~danielm/icml_workshop/4.pdf)
+ - [A Network-based End-to-End Trainable Task-oriented Dialogue System](https://arxiv.org/pdf/1604.04562v2.pdf)
  
