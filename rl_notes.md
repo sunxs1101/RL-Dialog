@@ -23,3 +23,8 @@ Jeff Dean:强化学习的想法是，你未必需要清楚你要采取的行动�
 
 ## survey
 A dialogue policy is formulated as a Partially Observable Markov Decision Process(POMDP) which models the uncertainty existing in both the users' goals and the outputs of the ASR and the NLU.
+
+http://www.leiphone.com/news/201612/RYp3OmyMycDSP5hd.html
+
+http://www.leiphone.com/news/201611/TYsrMIlxkaROJ9q0.html
+
