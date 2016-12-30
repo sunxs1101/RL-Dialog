@@ -136,3 +136,8 @@ Jekyll的好处：
 https://www.zhihu.com/question/28123816
 
 https://pages.github.com/
+
+### 实践chatbot
+http://www.wildml.com/2016/04/deep-learning-for-chatbots-part-1-introduction/
+
+http://www.wildml.com/category/reinforcement-learning/
