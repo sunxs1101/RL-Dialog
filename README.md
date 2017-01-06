@@ -75,7 +75,7 @@ This method stores the agent's experience at each time step in a replay memory t
  5. http://www.wildml.com/
 
 ## dqn算法实现
-参考[devsisters代码](https://github.com/devsisters/DQN-tensorflow)，这个代码依赖
+参考[devsisters代码](https://github.com/devsisters/DQN-tensorflow)，git clone DQN-tensorflow。这个代码依赖
  - Python 
  - gym
  - tqdm
@@ -84,11 +84,11 @@ This method stores the agent's experience at each time step in a replay memory t
 
  1. [OpenCV2安装](http://docs.opencv.org/2.4/doc/tutorials/introduction/linux_install/linux_install.html)
  按流程将opencv git clone到/home/crawler/tensorflow/dqn/gym/DQN-tensorflow/opencv ，但这么做很繁琐，直接用命令apt-get install python-opencv 就可以安装完成，然后import cv2测试。
- 2. gym安装
+ 2. gym安装 pip install tqdm gym
 [OpenAI Gym](https://gym.openai.com/)是一个Reinforcement Learning算法的toolkit，对agent结构没有假设，并且兼容tensorflow和theano。它包括两部分：1.gym开源库；2.OpenAI Gym service。
 
 /home/crawler/tensorflow/dqn/gym路径下，
- - case.py
+ - case.py，39上
  - case1.py
 这个cart-pole的例子，是用actor-critic的方式，actor-critic是Policy Gradient的一种方法，[这篇文章](http://brain.cc.kogakuin.ac.jp/~kanamaru/NN/CPRL/)比较好的介绍了这个方法，参考论文 [A Survey of Actor-Critic Reinforcement Learning:Standard and Natural Policy Gradients](http://busoniu.net/files/papers/ivo_smcc12_survey.pdf)。例子中cart-pole就是environment，gym库的主要目的是提供environment的集合，通过下面的命令查看
 ```
