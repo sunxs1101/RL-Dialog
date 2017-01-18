@@ -2,6 +2,7 @@
 [Three challenges you’re going to face when building a chatbot](https://blog.infermedica.com/three-challenges-youre-going-to-face-when-building-a-chatbot/)
 
 ## steps
+按照simpleDS和Deng li‘s paper做
  1. make clear the SimpleDS， deep reinforcement learning
  2. RL-based
 
