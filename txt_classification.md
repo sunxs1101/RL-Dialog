@@ -9,7 +9,8 @@ Instead of image pixels, the input to most NLP tasks are sentences or documents 
 ### reference
  - [Implementing a CNN for Text Classification in TensorFlow](http://www.wildml.com/2015/12/implementing-a-cnn-for-text-classification-in-tensorflow/)
  - [Convolutional Neural Networks for Sentence Classification](https://arxiv.org/pdf/1408.5882.pdf)
-
+ - [A Neural Probabilistic Language Model](http://jmlr.org/papers/volume3/bengio03a/bengio03a.pdf)
+ - [Character-Aware Neural Language Models](https://arxiv.org/pdf/1508.06615.pdf)
 
 #### RNN
 [recurrent neural network based language model](http://www.fit.vutbr.cz/research/groups/speech/publi/2010/mikolov_interspeech2010_IS100722.pdf)
